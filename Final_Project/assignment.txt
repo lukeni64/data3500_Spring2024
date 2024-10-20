@@ -1,0 +1,37 @@
+Each project must meet the following 5 project requirements:
+
+ 
+Obtaining data from a web JSON API (40 points)
+Storing the data in CSV files on your aws cloud9 server (40 points)
+The ability to add new data to your dataset.  Meaning, tomorrow you can run your program again, and it will go get the latest data, and run your analysis again. (40 points)
+Perform analysis on the data. (40 points)
+Store your results in a results.json file on your aws cloud9 server (40 points)
+(If you choose to do a project of your choice, you MUST also turn in a 2 - 4 minute video explaining and running your code)
+  (Your program must also use good programming style and comments)
+
+
+If you choose to do a project of your choice, it MUST meet all the requirements above.
+
+An example of a project of your choice could be: getting the latest data on the coronavirus from a web JSON API, storing the data in csv files, add the ability to get new data tomorrow and append it to the csv files, calculating the average and std dev on the data, and save the results to a results.json file.
+
+ 
+The content videos and zoom sessions will go over examples of each of the 5 project requirements.  We will also discuss other ideas if you would like to choose a project of your own.
+
+Individual Project Requirements
+
+Stock Market Trading
+ 
+
+You must choose at least 10 stocks
+I will provide you with instructions on using AlphaVantage web JSON API, but you can use another if you like.
+Your analysis must include 3 strategies.  You can reuse mean reversion and simple moving average, but you need to add one more.  
+If you have no idea what another strategy could be, you can use bollinger bands.  Simply modify the logic to the simple moving average...
+
+    if price > avg_price * 1.05   # buy
+
+    elif price < avg_price * .95     # sell
+
+Your program should save the data in csv files (i’ll let you decide the format/columns of the file)
+Your program should be able to save new data into the files.  Meaning, when I go to run your program, it should go get the latest data, update the files, and run new analysis.
+If your program detects a buy signal or sell signal on the last day in the data, print a message like “You should <buy or sell> this stock today”.
+Store your results to your strategy in a results.json, and specifically identify which stock and strategy made the most profit.
